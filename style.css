@@ -6,7 +6,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: content-box;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;margin-left:0 ;
 }
 
 /* scroll bar */
@@ -17,7 +17,7 @@
 
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
-
+  margin-left:0 ;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -39,6 +39,7 @@
 }
 .pic img{
     position: relative;
+    margin-left: 0;
 }
 .font{
     position: absolute;
@@ -117,18 +118,85 @@ html{
     background-color: rgb(65, 16, 16);
 }
 .contact{
-    margin-left: 10%;
+    margin-left: 14%;
    
 }
 .logo{
     height: 20px;
-    margin-left: 7%;
+    margin-left: 10%;
 }
 .mail{
-    margin-left: 11%;
+    margin-left: 14%;
     margin-top: -1.5%;
 }
 .logoo{
     height: 25px;
+    margin-left: 10%;
+}
+.logooo{
+    height: 60px;
     margin-left: 7%;
+    margin-top: 3%;
+}
+.logoooo{
+    height: 80px;
+    margin-left: 17%;
+    margin-top: -45%;
+    margin-bottom: .66%;
+}
+.logooooo{
+    height: 100px;
+    margin-left: 27%;
+    margin-top: -70%;
+    margin-bottom: 1.2%;
+    
+}
+#services{
+    background-color: rgb(41, 95, 95);
+}
+.serv{
+   margin-left: 40%;
+   font-size: xx-large;
+}
+.serv h1{
+    margin-left: 40%;
+    top: 20%;
+    
+}
+
+.logolink{
+    display: grid;
+ 
+   
+}
+::-webkit-input-placeholder{
+    text-align: center;
+    font-size: large;
+}
+.user{
+    display: grid;
+    width: 70%;
+    height: 10%;
+    border-radius: 5px;
+    
+}
+.box{
+    margin-left:45% ;
+    margin-top: -30%;
+    border-radius: 5px;
+    
+}
+.use{
+    display: grid;
+    width: 70%;
+    height: 60%;
+    border-radius: 5px;
+}
+.us{
+    width: 20%;
+    height: 10%;
+    border-radius: 15px;
+    background-color: rgb(51, 52, 75);
+    color: white;
+    font-size: large;
 }
