@@ -7,6 +7,7 @@
 	padding: 0;
 	box-sizing: content-box;
   font-family: 'Lato', sans-serif;margin-left:0 ;
+  margin-right: 0%;
 }
 
 /* scroll bar */
@@ -58,7 +59,7 @@
     
     transform: translate(70%,70%);
     position: absolute;
-    right: 20%;font-weight: bold;}
+    right: 20.8%;font-weight: bold;}
 .bgm a{
     font-style: normal;
  text-decoration: none;
@@ -166,6 +167,7 @@ html{
 
 .logolink{
     display: grid;
+    margin-right: 0%;
  
    
 }
@@ -177,20 +179,26 @@ html{
     display: grid;
     width: 70%;
     height: 10%;
+    margin-right:-20%;
     border-radius: 5px;
+    text-align: center;
+    font-size: larger;
     
 }
 .box{
     margin-left:45% ;
-    margin-top: -30%;
+    margin-top: -38%;
     border-radius: 5px;
+    text-align: center;
     
 }
 .use{
     display: grid;
     width: 70%;
-    height: 60%;
+    height: 50%;
     border-radius: 5px;
+    text-align: center;
+    font-size: larger;
 }
 .us{
     width: 20%;
@@ -199,4 +207,5 @@ html{
     background-color: rgb(51, 52, 75);
     color: white;
     font-size: large;
+    margin-left: -28%;
 }
