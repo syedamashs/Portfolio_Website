@@ -119,8 +119,12 @@ html{
     background-color: rgb(65, 16, 16);
 }
 .contact{
-    margin-left: 14%;
+    margin-left: 10%;
+    font-size: 55px;
    
+}
+.contact p{
+    font-size: 100px;
 }
 .logo{
     height: 20px;
@@ -208,4 +212,48 @@ html{
     color: white;
     font-size: large;
     margin-left: -28%;
+}.card{
+    border: 2px solid rgb(233, 225, 225);
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: rgb(18, 18, 32);
+    transform: translate(50%,30%);
+    color: white;
+}
+.flag{
+    height: 100px;
+    width: 100px;
+}
+.card{
+    border: 2px solid rgb(233, 225, 225);
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: rgb(18, 18, 32);
+    transform: translate(45%,30%);
+    color: white;
+}
+.card2{
+    border: 2px solid rgb(233, 225, 225);
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: rgb(18, 18, 32);
+    transform: translate(200%,-70%);
+    color: white;
+}
+.card3{
+    border: 2px solid rgb(233, 225, 225);
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: rgb(18, 18, 32);
+    transform: translate(360%,-170%);
+    color: white;
+}
+.card_title{
+    margin-left: 2%;
+}
+.card_title2{
+    margin-left: 15%;
+}
+.card_title3{
+    margin-left: 10%;
 }
