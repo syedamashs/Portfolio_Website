@@ -72,6 +72,7 @@
 .bgm a:hover{
     color: rgb(100, 61, 61);
     border-bottom: 2px solid blue;
+    box-shadow: 10px 10px 70px rgb(65, 65, 65);
 }
 html{
     scroll-behavior: smooth;
@@ -256,4 +257,10 @@ html{
 }
 .card_title3{
     margin-left: 10%;
+}
+.us:hover{
+    width: 16%;
+    height: 8%;
+    margin-top: 6px;
+    box-shadow: 1px 1px 70px rgb(170, 114, 114);
 }
