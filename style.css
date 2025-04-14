@@ -1,24 +1,32 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
 }
 
 section {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.card img {
-  height: 200px;
-  object-fit: cover;
+.navbar-brand {
+  font-weight: bold;
+  font-size: 24px;
 }
 
-.social-icons img {
-  transition: transform 0.3s ease-in-out;
+h2 {
+  font-weight: bold;
+  font-size: 32px;
 }
 
-.social-icons img:hover {
-  transform: scale(1.1);
+.card-title {
+  font-weight: bold;
+  font-size: 20px;
 }
 
-textarea {
-  resize: none;
+.card-text {
+  font-size: 16px;
+}
+
+.btn {
+  font-weight: 500;
 }
