@@ -3,30 +3,50 @@ body {
   scroll-behavior: smooth;
 }
 
-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.navbar-brand {
-  font-weight: bold;
-  font-size: 24px;
+.full-screen {
+  height: 100vh;
+  text-align: center;
 }
 
-h2 {
-  font-weight: bold;
-  font-size: 32px;
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+  width: 0;
 }
 
-.card-title {
-  font-weight: bold;
-  font-size: 20px;
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
 }
 
-.card-text {
-  font-size: 16px;
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
 }
 
-.btn {
-  font-weight: 500;
+.social-icons a:hover {
+  color: #0dcaf0;
 }
