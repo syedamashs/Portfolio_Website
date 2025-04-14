@@ -1,11 +1,17 @@
-// Scroll reveal effect (optional)
-window.addEventListener('scroll', () => {
-  const reveals = document.querySelectorAll('.card');
-  reveals.forEach(card => {
-    const windowHeight = window.innerHeight;
-    const elementTop = card.getBoundingClientRect().top;
-    if (elementTop < windowHeight - 100) {
-      card.classList.add('animate__fadeInUp');
-    }
+// Reveal sections on scroll
+const sections = document.querySelectorAll(".section");
+const revealOptions = {
+  threshold: 0.2,
+};
+const revealOnScroll = new IntersectionObserver(function (entries, observer) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add("visible");
+    observer.unobserve(entry.target);
   });
+}, revealOptions);
+
+sections.forEach((section) => {
+  section.classList.add("opacity-0");
+  revealOnScroll.observe(section);
 });
