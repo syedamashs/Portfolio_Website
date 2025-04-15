@@ -1,67 +1,120 @@
+/* Reset and Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
 }
 
-html, body {
+body, html {
+  font-family: 'Segoe UI', sans-serif;
   scroll-behavior: smooth;
-  height: 100%;
-  overflow-x: hidden;
 }
 
-.section {
-  height: 100vh;
-  padding: 60px 20px;
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111;
+  color: white;
+  padding: 10px 30px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  z-index: 999;
 }
 
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-section {
+  height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Home */
 #home {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to right, #1c1c1c, #383838);
   color: white;
 }
 
+/* Skills */
 #skills {
-  background-color: #0077b6;
+  background: #f0f0f0;
 }
 
-#projects {
-  background-color: #f8f9fa;
-}
-
-#contact {
-  background-color: #000;
-}
-
-.skill-box {
+.skill {
   margin: 20px 0;
+  width: 80%;
 }
 
 .skill-bar {
-  background-color: #ccc;
+  width: 100%;
+  background: #ddd;
   height: 30px;
-  border-radius: 20px;
+  border-radius: 30px;
   overflow: hidden;
 }
 
-.skill-fill {
-  background-color: #00ff99;
+.fill {
   height: 100%;
-  text-align: right;
-  padding-right: 10px;
+  background: #00ff99;
   line-height: 30px;
+  padding-left: 10px;
+  color: black;
   font-weight: bold;
   transition: width 1s ease-in-out;
 }
 
+/* Projects */
+#projects {
+  background: #ffffff;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 .project-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #f5f5f5;
+  border: 2px solid #ccc;
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact */
+#contact {
+  background: #111;
+  color: white;
 }
