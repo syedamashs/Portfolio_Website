@@ -2,102 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Syed Amash Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 </head>
 <body>
-
-  <header class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark px-5">
-    <a class="navbar-brand" href="#">Syed Amash S</a>
-    <div class="collapse navbar-collapse justify-content-end">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MyPortfolio</a>
+        <div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <section id="home" class="section full-screen d-flex flex-column justify-content-center align-items-center text-white bg-dark">
-    <h1 class="display-4">Hi, I'm Syed Amash</h1>
-    <h3 class="typewriter text-secondary mt-2">Web Developer | Learner | Tech Enthusiast</h3>
-  </section>
-
-  <section id="about" class="section bg-light py-5 text-center">
-    <div class="container">
-      <h2 class="mb-4">About Me</h2>
-      <p class="lead">B.Tech IT Student from Thiagarajar College of Engineering, passionate about technology and problem-solving.</p>
+  <!-- Home Section -->
+  <section id="home" class="section d-flex align-items-center justify-content-center">
+    <div class="text-center">
+      <h1 id="typewriter"></h1>
+      <p class="lead mt-3">Web Developer | Tech Enthusiast | Problem Solver</p>
     </div>
   </section>
 
-  <section id="skills" class="section py-5 bg-body-secondary">
+  <!-- Skills Section -->
+  <section id="skills" class="section bg-primary text-white">
     <div class="container">
-      <h2 class="text-center mb-4">Skills</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <h5>Python</h5>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-success" style="width: 75%">75%</div>
-          </div>
-          <h5>Java</h5>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-info" style="width: 70%">70%</div>
-          </div>
-          <h5>Machine Learning</h5>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-warning" style="width: 60%">60%</div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <h5>HTML/CSS</h5>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-primary" style="width: 90%">90%</div>
-          </div>
-          <h5>JavaScript</h5>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-danger" style="width: 80%">80%</div>
-          </div>
-          <h5>React (Learning)</h5>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-secondary" style="width: 40%">40%</div>
-          </div>
-        </div>
+      <h2 class="text-center mb-4" data-aos="fade-up">My Skills</h2>
+      <div class="skill-box" data-aos="fade-up">
+        <label>Python</label>
+        <div class="skill-bar"><div class="skill-fill" style="width: 90%">90%</div></div>
+      </div>
+      <div class="skill-box" data-aos="fade-up">
+        <label>Machine Learning</label>
+        <div class="skill-bar"><div class="skill-fill" style="width: 80%">80%</div></div>
+      </div>
+      <div class="skill-box" data-aos="fade-up">
+        <label>HTML/CSS</label>
+        <div class="skill-bar"><div class="skill-fill" style="width: 95%">95%</div></div>
+      </div>
+      <div class="skill-box" data-aos="fade-up">
+        <label>JavaScript</label>
+        <div class="skill-bar"><div class="skill-fill" style="width: 85%">85%</div></div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="section bg-light py-5 text-center">
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-light">
     <div class="container">
-      <h2 class="mb-4">Projects</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm project-card">
+      <h2 class="text-center mb-5" data-aos="zoom-in">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="flip-left">
+          <div class="card project-card h-100">
             <div class="card-body">
               <h5 class="card-title">Crypto Price Tracker</h5>
-              <p class="card-text">Live cryptocurrency prices with charts and market insights.</p>
-              <a href="https://syedamashs.github.io/Crypto-Price-Tracker" target="_blank" class="btn btn-outline-primary">View</a>
+              <p class="card-text">Real-time cryptocurrency price tracker using API integration and charts.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm project-card">
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+          <div class="card project-card h-100">
             <div class="card-body">
-              <h5 class="card-title">Self-Balancing Robot</h5>
-              <p class="card-text">IoT project using gyroscope and Arduino for dynamic balancing.</p>
-              <a href="#" class="btn btn-outline-primary">View</a>
+              <h5 class="card-title">DevPrep Legend</h5>
+              <p class="card-text">Your one-stop resource for CAT and Placement preparation materials.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm project-card">
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
+          <div class="card project-card h-100">
             <div class="card-body">
-              <h5 class="card-title">DevPrep-Legend</h5>
-              <p class="card-text">Placement & CAT resource portal for students.</p>
-              <a href="https://syedamashs.github.io/DevPrep-Legend" target="_blank" class="btn btn-outline-primary">View</a>
+              <h5 class="card-title">Smart Gym (IoT)</h5>
+              <p class="card-text">Smart Gym system using sensors to track reps and posture correction.</p>
             </div>
           </div>
         </div>
@@ -105,18 +89,18 @@
     </div>
   </section>
 
-  <section id="contact" class="section py-5 text-white bg-dark">
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-dark text-white">
     <div class="container text-center">
-      <h2 class="mb-4">Contact Me</h2>
-      <p>Email: syedamash.tce@gmail.com</p>
-      <p>Phone: +91 9442634810</p>
-      <div class="social-icons mt-4">
-        <a href="https://github.com/Syed-Amash-07" target="_blank" class="me-3 text-white fs-3"><i class="bi bi-github"></i></a>
-        <a href="https://linkedin.com/in/syed-amash-s-0646202a3" target="_blank" class="me-3 text-white fs-3"><i class="bi bi-linkedin"></i></a>
-      </div>
+      <h2 class="mb-4" data-aos="fade-up">Contact Me</h2>
+      <p data-aos="fade-up">📧 <strong>youremail@example.com</strong></p>
+      <p data-aos="fade-up">📱 <strong>+91 98765 43210</strong></p>
+      <p data-aos="fade-up">🌐 <strong>github.com/yourprofile</strong></p>
     </div>
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
