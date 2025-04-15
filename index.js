@@ -1,17 +1,18 @@
-// Reveal sections on scroll
-const sections = document.querySelectorAll(".section");
-const revealOptions = {
-  threshold: 0.2,
-};
-const revealOnScroll = new IntersectionObserver(function (entries, observer) {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add("visible");
-    observer.unobserve(entry.target);
-  });
-}, revealOptions);
+// Typewriter effect
+const text = "Hi, I'm a B.Tech IT Student Passionate About Tech.";
+let index = 0;
 
-sections.forEach((section) => {
-  section.classList.add("opacity-0");
-  revealOnScroll.observe(section);
+function typeWriter() {
+  if (index < text.length) {
+    document.getElementById("typewriter").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, 70);
+  }
+}
+typeWriter();
+
+// AOS init
+AOS.init({
+  duration: 1000,
+  once: true,
 });
